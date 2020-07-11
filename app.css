@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
   body {
     background-color: #0095dd;
@@ -68,4 +68,39 @@
   .rules.show {
     transform: translateX(0);
   }
+
+  .control-button {
+    background-color: white;
+    border: 5px solid rgb(156, 213, 241);
+    color: #0095dd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 4px 4px;
+    border-radius: 50%;
+  }
   
+  .control-button:focus {
+    outline: 0;
+  }
+  
+  .control-button:active {
+    transform: scale(0.98);
+    -webkit-box-shadow: 0px 5px 40px -10px rgb(209, 233, 245);
+    -moz-box-shadow: 0px 5px 40px -10px rgb(209, 233, 245);
+    box-shadow: 5px 40px -10px rgb(209, 233, 245);
+  }
+
+  .direction-button-container {
+    margin-top: 15px;
+    width: 800px;
+    display: flex;
+    align-content: space-between;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }

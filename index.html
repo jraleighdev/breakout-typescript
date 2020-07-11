@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="app.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <h1>Breakout!</h1>
@@ -26,7 +27,19 @@
     <canvas id="canvas" width="800" height="600">
             
     </canvas>
-        
-        <script src="bundle.js" async defer></script>
+    
+    <div class="direction-button-container">
+        <button id="left-button" class="control-button"><span class="material-icons">
+            arrow_back_ios
+            </span></button>
+        <span class="example-spacer"></span>
+        <button id="right-button" class="control-button"><span class="material-icons">
+            arrow_forward_ios
+            </span></button>
+    </div>
+
+    
+
+        <script src="dist/bundle.js" async defer></script>
     </body>
 </html>
